@@ -38,7 +38,7 @@ Most first-run tasks take time on a large library. Finding files, preparing CLIP
 
 ## Source code
 
-Silo 2.0 source code is maintained in the [Silo GitHub repository](https://github.com/ilovespectra/file-browser-electron).
+Silo 2.0 source code is maintained in the [Silo GitHub repository](https://github.com/ilovespectra/Silo).
 
 ## Privacy at a glance
 
