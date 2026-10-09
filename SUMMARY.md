@@ -1,0 +1,18 @@
+# Table of contents
+
+* [Silo User Guide](README.md)
+* [Install and first launch](00-getting-started.md)
+* [Files and sources](01-files-and-sources.md)
+* [Search and indexing](02-search-and-indexing.md)
+* [People and face scanning](03-people.md)
+* [Digital folders and offline references](04-digital-folders.md)
+* [Map and locations](05-map.md)
+* [Duplicates](06-duplicates.md)
+* [Memories](07-memories.md)
+* [Phones and messages](08-mobile.md)
+* [Google sources](09-cloud-sources.md)
+* [Backups and Time Machine](10-backups.md)
+* [Settings and privacy](11-settings-and-privacy.md)
+* [Troubleshooting](12-troubleshooting.md)
+* [Compatibility and limits](13-compatibility.md)
+* [License, demo and support access](14-license-and-demo.md)
