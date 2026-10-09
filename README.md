@@ -36,6 +36,10 @@ Silo presents selected sources in a unified desktop workspace. It keeps original
 
 Most first-run tasks take time on a large library. Finding files, preparing CLIP search, face scanning, location extraction, duplicate hashing and thumbnail generation are separate jobs. A progress bar reaching 100% for one job does not mean every other job is complete.
 
+## Source code
+
+Silo 2.0 source code is maintained in the [Silo GitHub repository](https://github.com/ilovespectra/file-browser-electron).
+
 ## Privacy at a glance
 
 - Local folders are processed on the Mac. CLIP search and face detection use local models after the required model files are available.
