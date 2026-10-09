@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+site:
+  title: Silo User Guide
+  structure:
+    - type: space
+      key: silo-user-guide
+      title: Silo User Guide
+      path: user-guide
+      default: true
+      content:
+        directory: .
