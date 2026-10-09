@@ -184,7 +184,7 @@ function App() {
           <article className="markdown-body" key={doc?.id} dangerouslySetInnerHTML={renderMarkdown(doc ?? home)} />
           {doc?.id !== 'README' && <ChapterPager doc={doc} />}
         </div>
-        <footer className="site-footer"><span>Made for people who care where their files live.</span><a href="https://trysilo-seven.vercel.app" target="_blank" rel="noreferrer">Discover Silo <span>↗</span></a></footer>
+        <footer className="site-footer"><span>Made for people who care where their files live.</span><nav aria-label="Silo links"><a href="https://trysilo-seven.vercel.app/" target="_blank" rel="noreferrer">Try Silo <span>↗</span></a><a href="https://github.com/ilovespectra/Silo" target="_blank" rel="noreferrer">Source on GitHub <span>↗</span></a></nav></footer>
       </main>
     </div>
   );
