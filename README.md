@@ -46,4 +46,4 @@ Most first-run tasks take time on a large library. Finding files, preparing CLIP
 
 ## Silo look and feel
 
-The guide uses Silo's black and orange identity. GitBook's built-in theme follows the reader's light or dark preference; use the Silo logo and orange accent in the space branding controls. Do not force dark body text onto a light theme.
+This guide uses Silo's black and orange identity. The website follows your device's light or dark appearance by default; use the theme control in the page header to switch modes at any time. The guide remains readable in both themes.
