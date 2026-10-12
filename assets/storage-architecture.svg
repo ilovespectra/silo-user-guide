@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 930" role="img" aria-labelledby="title desc">
+  <title id="title">Recommended storage architecture for a resilient Silo library</title>
+  <desc id="desc">Copy small sources to one large working drive, explore and organize that library with Silo, then periodically copy and verify it to a disconnected fallout shelter drive. Refresh the offline copy at least once a year. Google Drive stays view-only in Silo, and Digital Folders do not move originals.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1c1d"/>
+      <stop offset="1" stop-color="#131415"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f18943" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f18943" stop-opacity=".025"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M1 1 10 6 1 11" fill="none" stroke="#f18943" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .muted{fill:#aaa39b}.cream{fill:#f3e9df}.orange{fill:#f6a367}.soft{fill:#d2cbc2}
+      .eyebrow{font-size:14px;font-weight:700;letter-spacing:2.2px;fill:#f6a367}
+      .heading{font-size:38px;font-weight:650;letter-spacing:-1.1px;fill:#f3e9df}
+      .subhead{font-size:16px;fill:#aaa39b}
+      .stage{font-size:12px;font-weight:700;letter-spacing:1.7px;fill:#f6a367}
+      .card-title{font-size:25px;font-weight:650;letter-spacing:-.45px;fill:#f3e9df}
+      .body{font-size:15px;fill:#d2cbc2}
+      .small{font-size:12px;fill:#aaa39b}
+      .tiny{font-size:11px;fill:#928c85}
+      .label{font-size:11px;font-weight:700;letter-spacing:1.15px;fill:#cfc7bd}
+      .outline{fill:url(#panel);stroke:#383635;stroke-width:1.5}
+      .icon{fill:none;stroke:#f6a367;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="1438" height="928" rx="24" fill="#111213" stroke="#343332" stroke-width="2"/>
+  <path d="M2 2h1436v7H2z" fill="url(#glow)"/>
+
+  <text x="62" y="72" class="eyebrow">A PRACTICAL, LOCAL-FIRST BACKUP PLAN</text>
+  <text x="62" y="124" class="heading">Gather once. Protect twice.</text>
+  <text x="62" y="158" class="subhead">One large working library, plus a verified offline copy for the day a drive fails.</text>
+  <g transform="translate(1027 91)">
+    <rect width="352" height="42" rx="21" fill="#211d1a" stroke="#5d4432"/>
+    <circle cx="22" cy="21" r="5" fill="#f18943"/>
+    <text x="39" y="26" class="label">ONE PRIMARY COPY  +  ONE OFFLINE COPY</text>
+  </g>
+
+  <!-- source stage -->
+  <g>
+    <rect x="52" y="205" width="365" height="440" rx="16" class="outline"/>
+    <text x="80" y="247" class="stage">01  /  COLLECT</text>
+    <text x="80" y="284" class="card-title">Small sources</text>
+    <text x="80" y="310" class="small">Bring scattered files into one clear starting point.</text>
+
+    <g transform="translate(86 347)">
+      <rect x="0" y="0" width="70" height="82" rx="13" fill="#222324" stroke="#4b4641"/>
+      <rect x="23" y="12" width="25" height="48" rx="5" class="icon"/>
+      <path d="M31 53h9M33 18h5" class="icon"/>
+      <text x="35" y="104" text-anchor="middle" class="label">PHONE</text>
+    </g>
+    <g transform="translate(177 347)">
+      <rect x="0" y="0" width="70" height="82" rx="13" fill="#222324" stroke="#4b4641"/>
+      <path d="M20 22h30v35H20zM26 22v-9h18v9M27 48h16" class="icon"/>
+      <circle cx="35" cy="67" r="2.5" fill="#f6a367"/>
+      <text x="35" y="104" text-anchor="middle" class="label">USB / DISK</text>
+    </g>
+    <g transform="translate(268 347)">
+      <rect x="0" y="0" width="70" height="82" rx="13" fill="#222324" stroke="#4b4641"/>
+      <path d="M15 48h41a11 11 0 0 0 0-22h-3a18 18 0 0 0-34-4 13 13 0 0 0-4 26Z" class="icon"/>
+      <text x="35" y="104" text-anchor="middle" class="label">CLOUD</text>
+    </g>
+
+    <path d="M80 484h308" stroke="#343332"/>
+    <text x="80" y="514" class="body">Phones, USB sticks, small disks,</text>
+    <text x="80" y="538" class="body">and cloud folders or exports.</text>
+    <rect x="80" y="565" width="309" height="53" rx="9" fill="#191a1b" stroke="#383635"/>
+    <text x="96" y="587" class="small">Copy or export with each source's</text>
+    <text x="96" y="605" class="small">own tools where Silo is view-only.</text>
+  </g>
+
+  <!-- arrow one -->
+  <g>
+    <text x="461" y="380" text-anchor="middle" class="label">COPY</text>
+    <path d="M426 405h70" fill="none" stroke="#f18943" stroke-width="2.4" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- primary working library -->
+  <g>
+    <rect x="512" y="205" width="416" height="440" rx="16" fill="url(#panel)" stroke="#754e34" stroke-width="2"/>
+    <rect x="513" y="206" width="414" height="8" rx="4" fill="url(#glow)"/>
+    <text x="542" y="247" class="stage">02  /  EXPLORE WITH SILO</text>
+    <text x="542" y="284" class="card-title">One large working drive</text>
+    <text x="542" y="310" class="small">A primary place for your local library.</text>
+
+    <g transform="translate(639 337)">
+      <rect x="0" y="0" width="160" height="88" rx="14" fill="#202122" stroke="#f18943" stroke-width="2"/>
+      <path d="M20 26h120v34H20zM33 43h94" class="icon"/>
+      <circle cx="129" cy="72" r="4" fill="#48c995"/>
+      <path d="M27 74h50" stroke="#5a544e" stroke-width="2" stroke-linecap="round"/>
+      <path d="m79 13 18-9 18 9-18 9z" fill="#f18943" opacity=".95"/>
+      <text x="98" y="17" text-anchor="middle" font-size="8" font-weight="800" fill="#171819">S</text>
+    </g>
+    <text x="719" y="445" text-anchor="middle" class="label">YOUR BROWSEABLE WORKING LIBRARY</text>
+
+    <g transform="translate(542 472)">
+      <rect width="96" height="33" rx="16" fill="#242322" stroke="#514238"/>
+      <text x="48" y="21" text-anchor="middle" class="small">Duplicates</text>
+      <rect x="104" width="74" height="33" rx="16" fill="#242322" stroke="#514238"/>
+      <text x="141" y="21" text-anchor="middle" class="small">People</text>
+      <rect x="186" width="56" height="33" rx="16" fill="#242322" stroke="#514238"/>
+      <text x="214" y="21" text-anchor="middle" class="small">Map</text>
+      <rect x="250" width="136" height="33" rx="16" fill="#242322" stroke="#514238"/>
+      <text x="318" y="21" text-anchor="middle" class="small">Digital Folders</text>
+    </g>
+    <path d="M542 527h356" stroke="#343332"/>
+    <text x="542" y="553" class="small">Digital Folders organize references; they</text>
+    <text x="542" y="572" class="small">do not move or copy the original files.</text>
+    <text x="542" y="608" class="tiny">SILO HELPS YOU BROWSE AND ORGANIZE THE LIBRARY.</text>
+  </g>
+
+  <!-- arrow two -->
+  <g>
+    <text x="980" y="380" text-anchor="middle" class="label">COPY + VERIFY</text>
+    <path d="M936 405h79" fill="none" stroke="#f18943" stroke-width="2.4" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- offline shelter -->
+  <g>
+    <rect x="1030" y="205" width="358" height="440" rx="16" class="outline"/>
+    <text x="1058" y="247" class="stage">03  /  PROTECT</text>
+    <text x="1058" y="284" class="card-title">Fallout Shelter drive</text>
+    <text x="1058" y="310" class="small">A separate copy, kept offline between updates.</text>
+
+    <g transform="translate(1138 340)">
+      <path d="M13 16 123 0l62 35-4 91-116 19L4 108z" fill="#202122" stroke="#f18943" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="m13 16 52 30 116-11M65 46l-1 99M65 46l-1 99" fill="none" stroke="#7b5b43" stroke-width="1.6"/>
+      <circle cx="145" cy="28" r="4" fill="#48c995"/>
+      <path d="M122 139v12c0 10 8 15 19 15h17" fill="none" stroke="#aaa39b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M158 160v13m8-13v13m-11 0h14" fill="none" stroke="#f6a367" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="m150 156 22 22" stroke="#f18943" stroke-width="2"/>
+    </g>
+    <text x="1209" y="536" text-anchor="middle" class="label">SEPARATE • VERIFIED • OFFLINE</text>
+    <path d="M1058 556h302" stroke="#343332"/>
+    <text x="1058" y="583" class="small">Refresh periodically, verify the copy,</text>
+    <text x="1058" y="603" class="small">then disconnect the drive.</text>
+    <text x="1058" y="628" class="tiny">A VERIFIED COPY CAN STILL BECOME STALE.</text>
+  </g>
+
+  <!-- freshness reminder -->
+  <g>
+    <rect x="52" y="681" width="1336" height="141" rx="16" fill="url(#glow)" stroke="#68452e" stroke-width="1.6"/>
+    <circle cx="108" cy="751" r="31" fill="#251d18" stroke="#875330"/>
+    <path d="M108 731v21l14 8M96 725h24M98 721v9m20-9v9" fill="none" stroke="#f6a367" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="163" y="728" class="stage">BACKUP FRESHNESS</text>
+    <text x="163" y="772" font-size="28" font-weight="700" fill="#f3e9df">Refresh at least once a year.</text>
+    <text x="163" y="798" class="small">After copying, verify the result and note the real last-verified date.</text>
+    <rect x="1080" y="724" width="270" height="55" rx="10" fill="#191a1b" stroke="#5d4432"/>
+    <text x="1215" y="747" text-anchor="middle" class="label">CHECK AGE + VERIFY</text>
+    <text x="1215" y="766" text-anchor="middle" class="tiny">Don't trust a stale green tick.</text>
+  </g>
+
+  <text x="55" y="864" class="tiny">GOOGLE DRIVE IS VIEW-ONLY IN SILO. USE ITS OWN EXPORT TOOLS WHEN NEEDED.</text>
+  <text x="55" y="886" class="tiny">Back up originals separately from Silo's rebuildable caches. Check each source, destination and verification status.</text>
+  <text x="1385" y="886" text-anchor="end" class="tiny">SILO  /  LOCAL-FIRST BY DESIGN</text>
+</svg>

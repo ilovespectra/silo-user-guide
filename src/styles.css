@@ -127,6 +127,10 @@ kbd { padding: 3px 5px; border: 1px solid var(--line); border-radius: 4px; color
 .markdown-body blockquote { margin: 22px 0; padding: 15px 18px; border-left: 3px solid var(--orange); border-radius: 0 7px 7px 0; background: var(--orange-wash); color: var(--muted); }
 .markdown-body blockquote p { margin: 0; }
 .markdown-body img { display: block; max-width: 100%; height: auto; margin: 25px auto; border: 1px solid var(--line); border-radius: 9px; box-shadow: 0 12px 40px rgba(0,0,0,.11); }
+.markdown-body .backup-architecture { margin: 28px 0 32px; }
+.markdown-body .backup-architecture picture, .markdown-body .backup-architecture img { display: block; width: 100%; }
+.markdown-body .backup-architecture img { max-width: none; margin: 0; }
+.markdown-body .backup-architecture figcaption { margin: 13px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .markdown-body code { padding: 2px 5px; border-radius: 4px; background: var(--panel-soft); color: var(--orange); font: .88em ui-monospace, SFMono-Regular, Menlo, monospace; }
 .markdown-body pre { overflow: auto; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
 .markdown-body pre code { padding: 0; background: none; color: var(--text); }

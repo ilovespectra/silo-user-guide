@@ -2,6 +2,16 @@
 
 Silo has two separate ideas: its generated **cache/index** and backup **copies of original files**. Indexes and thumbnails can help Silo work; they are not a replacement for a verified backup of your photos and documents.
 
+## A practical storage arrangement
+
+<figure class="backup-architecture">
+  <picture>
+    <source media="(max-width: 700px)" srcset="/assets/storage-architecture-mobile.svg">
+    <img src="/assets/storage-architecture.svg" alt="Three-step backup plan: copy small sources to one large working drive, browse and organize the local library with Silo, then copy and verify it on a separate offline Fallout Shelter drive. Refresh the offline copy at least once a year. Google Drive is view-only in Silo, and Digital Folders do not move originals." loading="lazy">
+  </picture>
+  <figcaption>Gather scattered sources on a large working drive. Use Silo to browse and organize the local library, then create a verified copy on a separate drive and disconnect it between refreshes. Refresh that offline copy at least once a year; a copy verified before can become stale. Digital Folders organize references without moving or copying originals. Google Drive is view-only in Silo, so use Google’s own export tools when needed.</figcaption>
+</figure>
+
 ## Shelter copy: verified file clone
 
 The shelter-copy flow makes a copy of selected source data onto a destination volume and verifies it. Check the selected sources, destination, available space and verification summary before starting. Do not disconnect either volume while copying or verifying.
