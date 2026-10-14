@@ -38,7 +38,7 @@ Most first-run tasks take time on a large library. Finding files, preparing CLIP
 
 ## Official links
 
-- [Try Silo website](https://trysilo-seven.vercel.app/)
+- [Try Silo website](https://trysilo.kolektivkrog.si/)
 - [Silo source code on GitHub](https://github.com/ilovespectra/Silo)
 
 ## Privacy at a glance
