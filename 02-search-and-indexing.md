@@ -26,6 +26,8 @@ Indexing is a set of independent jobs:
 
 A source can be visible while one or more of these jobs is still running. Search only sees records that have been added to the searchable index. Results may arrive progressively as indexing fills in, but no result count or fixed latency is guaranteed for every library or build. Cold-start preparation and index recovery can take time.
 
+Recent releases improve startup/index recovery and Intel native-index loading. At completion, the app reconciles indexing counters, but eligible files, successful records and skipped/failed files are still different totals. A completed stage can have individual unreadable files; inspect its error count instead of treating 100% as proof that every file was indexed.
+
 ## Step-by-step search
 
 1. Open **Files** and make sure the relevant sources are available and selected.

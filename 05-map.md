@@ -27,6 +27,7 @@ Relocation changes location metadata or Silo's location assignment according to 
 - Pause/resume controls affect globe rotation only.
 - Solar-time controls change the displayed day/night boundary. They do not edit photo metadata.
 - Appearance settings can pause automatic rotation or preload local day/night map textures.
+- The map shows count pills for its photo/location inventory, and sidebar sections can be collapsed. Counts describe available indexed location data, not every photo in the library. The updated night texture changes globe presentation only.
 
 ## Limits
 

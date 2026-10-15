@@ -18,6 +18,8 @@ The Memories setting selects where generated movies and their support files are 
 
 Backup & restore can export Silo configuration and indexed knowledge. The export can contain sign-in tokens, so treat it like a secret and store it privately. Review an import before applying: restoring replaces the current Silo setup and restarts the app. It does not modify source media; phone backups are not included.
 
+Paid/beta licenses and the installation ID are excluded. Restoring on another computer does not transfer lifetime access; see [License and demo](14-license-and-demo.md).
+
 ## Content protection
 
 Content protection controls visibility of explicit images and banned people, Safe Search behavior and authorization for protected changes. Explicit images are hidden and excluded from search by default. Banned people are hidden according to the relevant settings. If a parental password is enabled, Silo asks for it before protected changes; the password itself is not stored, only a verifier. Keep the password somewhere safe.
@@ -31,3 +33,5 @@ The link uses **unencrypted local HTTP**. Only enable it on a trusted private Wi
 ## Feedback and screenshots
 
 Silo's report-a-problem workflow may attach a screenshot of the Silo window if you choose that option. Inspect screenshots for faces, filenames, paths, account names and other personal details before sending. Sharing a support report is a separate, deliberate action.
+
+License activation sends the installation's device-binding ID, purchase reference and transaction signature as needed to the HTTPS license relay, which checks Solana through its RPC provider and records successful payments in its database. The local signed receipt is separate from the movable media-index cache. See [Payment verification](14-license-and-demo.md#manual-verification-and-payment-problems).

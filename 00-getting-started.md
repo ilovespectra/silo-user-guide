@@ -27,6 +27,12 @@ Preview builds may be unsigned and not notarized. If Gatekeeper blocks a checksu
 - Add [people and face groups](03-people.md) when you are ready; that scan is optional and separate.
 - Set up [phone](08-mobile.md) or [Google](09-cloud-sources.md) sources only when you need them.
 
+## Install an update
+
+Open **Settings → Software updates**. On macOS, **Download and install Silo** downloads the architecture-matched update, installs it in place and restarts the app; it is no longer just a link to a GitHub download. Wait for the displayed download/install state and avoid interrupting the installation. If the update fails, follow the displayed error or installer-download fallback. Other platforms can have different updater support.
+
+Check the version after relaunch. An update does not give an unlicensed computer full access; see [License and demo](14-license-and-demo.md).
+
 ## A note about first-run speed
 
 The first launch can reopen saved records, warm the local search model and prepare a fast search structure. These are not the same as discovering every file on every connected source. A saved library can appear while new-source discovery continues, and search coverage grows as eligible files are indexed. Silo does not promise a fixed completion time; library size, file formats, storage speed, source availability and Mac hardware all matter.

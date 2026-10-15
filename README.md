@@ -4,7 +4,7 @@
 
 **Your files, one local-first library.** Browse folders, drives, connected phones and selected cloud files; search photos by meaning; organize with people, places and virtual collections; review duplicates; and make memory videos.
 
-> This guide describes the Silo 2.0.2 source snapshot reviewed on **October 9, 2026**. The installed Mac app used for screenshots currently reports bundle version **1.0.0** and minimum macOS **12.0**, so the source and packaged version labels do not agree. See [Compatibility and known limits](13-compatibility.md) before relying on version-specific details.
+> Updated for **Silo 2.1.4**, reviewed on **October 15, 2026** against the official GitHub release tag **v2.1.4**. Screenshots are from an earlier preview and may differ from the current layout. This is a source review, not a new end-to-end test of every installer or checkout. See [Compatibility and known limits](13-compatibility.md).
 
 ![Silo Files screen at first launch](assets/files-first-launch-redacted.jpg)
 
@@ -35,6 +35,15 @@
 Silo presents selected sources in a unified desktop workspace. It keeps original files where they are unless you choose an action that changes them. Search indexes, face groups, location indexes, thumbnails and other derived data are local Silo data; they are not substitutes for a backup of your originals.
 
 Most first-run tasks take time on a large library. Finding files, preparing CLIP search, face scanning, location extraction, duplicate hashing and thumbnail generation are separate jobs. A progress bar reaching 100% for one job does not mean every other job is complete.
+
+## Recent improvements
+
+- **Search and indexing:** startup/storage recovery and Intel native-index loading have been improved; completed-stage counts are reconciled, and a few unreadable files no longer trigger a systemic indexing-failure report.
+- **Memories:** automatic suggestions after startup indexing settles and every 24 hours while Silo remains open, a working **Generate Memories** replacement flow with live progress, background movie preparation, a Memory Book of finished movies, and full-screen playback.
+- **Mobile and Map:** bundled phone tools, compact device action toolbars, a backup confirmation/destination dialog, and clearer map counts and collapsible sidebar sections.
+- **Licensing and updates:** finalized Solana USDC verification through the license relay, signed licenses bound to one computer, corrected wallet links, automatic closing after activation, and in-place macOS updates.
+
+See the individual chapters for requirements and remaining limits; these improvements do not guarantee that every file is readable or every device is supported.
 
 ## Official links
 

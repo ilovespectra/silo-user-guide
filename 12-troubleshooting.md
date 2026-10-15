@@ -25,6 +25,7 @@ A `0%` saved-index opening indicator is not the same as “no files found.” A 
 - Wait for the thumbnail/preview stage; Silo can index a file before its preview is ready.
 - Try opening the original from its source. Unsupported, corrupt, encrypted or very large files may not decode.
 - If a removable cache drive is missing, reconnect it and let Silo verify recovery before manually changing folders.
+- In 2.0.9, macOS HEIC/HEIF indexing tries the system decoder first, addressing an Intel HEVC-decoder limitation. An image reported as damaged or using the wrong extension still needs checking in another viewer; this is not the same as a missing source file.
 
 ## Mac is warm or Silo is sluggish
 
@@ -50,7 +51,8 @@ Duplicate review finds exact-content matches, not similar images. Confirm the sc
 - Use a data-capable cable and connect directly if a hub is suspect.
 - On iPhone/iPad: unlock the device, choose **Trust This Computer**, and reconnect.
 - On Android: enable USB debugging, select file-transfer mode if required and approve the debugging computer prompt.
-- Confirm required tools are installed (`libimobiledevice` for iOS connection, Android platform tools/`adb` for Android).
+- Packaged 2.1.4 builds include iOS tools and Android `adb`. If Silo reports a missing tool, follow its reinstall/setup guidance instead of assuming every user must install tools separately.
+- On Windows, iOS connections still require **Apple Devices** or iTunes and a running Apple device service. Android still requires USB debugging authorization even with bundled `adb`.
 - iOS will not expose the entire protected filesystem to Silo.
 
 ## Google sign-in fails
