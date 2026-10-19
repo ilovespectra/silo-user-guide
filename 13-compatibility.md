@@ -1,35 +1,28 @@
 # Compatibility and known limits
 
-## What is verified for this guide
+## Current build and guide review
 
-The feature descriptions were checked against **Silo 2.1.4**, published on **October 15, 2026** in the official GitHub release tag **v2.1.4**. This review checked source behavior and payment/paid-license tests; it did not repeat installation and full workflow testing on every supported machine.
+Use [Silo Downloads → Latest release](https://github.com/ilovespectra/silo-downloads/releases/latest) for the current stable build, its architecture-specific installers, checksums, and release notes. The guide website reads the current release tag from Silo Downloads when online and keeps this rolling release link available if GitHub's API cannot be reached. This guide does not hard-code the current app version.
 
-The Mac build configuration declares minimum macOS **11.0**. A configured minimum is not proof that all bundled native dependencies and workflows work on that OS. Check the actual installer/bundle metadata and release notes for your download. The older screenshot build reported version 1.0.0 and minimum macOS 12.0; those historical labels do not describe the current release.
+The guide content was reviewed on **October 19, 2026** against the latest stable release available at that time. This is a source and documentation review, not a fresh installation or end-to-end test of every installer. The current-release link can advance automatically; the review date changes only when the guide content is checked again.
 
-The repository config defines architecture-specific Mac artifacts and an x64 Windows installer target. A configured target is build intent, not a substitute for installing and testing each artifact on real Intel and Apple silicon Macs and on the supported Windows versions.
+The Mac build configuration declares a minimum macOS version of **11.0**. A configured minimum is not proof that every bundled native dependency and workflow works on that OS. The repository also configures separate Intel and Apple silicon Mac artifacts and a Windows x64 installer. Build configuration alone is not compatibility testing: check the release notes and test each installer on its target hardware and operating system.
 
-## Reliability changes through 2.1.4
+## Reliability and feature behavior
 
-Recent fixes in this release focus on memory generation stability and related reliability improvements, including x64 binary fixes and the latest main.ts updates. Earlier improvements through 2.0.10 covered startup storage, native search-index loading, semantic-index recovery and readiness, completed indexing counts, HEIC/HEIF decode fallback, and bundled phone tools.
-
-Finished indexing reports now distinguish a small number of bad files from counter mismatches or a systemic failure rate. Normal quits also clear the running-session crash marker instead of being mistaken for crashes. These are source-level improvements, not a guarantee of zero failures.
-
-The 2.1.4 Memories handler continues the reliability work around **Generate Memories**, keeping generation stable while the page shows live progress and placeholder cards while a replacement set is being found. Phone-tool packaging still includes iOS tools and Android `adb`; Windows iOS connections still need Apple's device service.
-
-## Feature limitations to know
-
-- First-run indexing and cold-start search preparation can take time; search coverage grows with completed indexing.
-- CLIP is visual semantic matching. It can miss relevant items or return approximate matches; it is not a guarantee and is not general OCR.
-- People groups are model suggestions and require human review. Face angle, lighting, occlusion and image quality affect results.
-- Map needs location metadata; it does not infer GPS from a scene.
-- Duplicate scan finds exact file-content matches, not visually similar or edited copies.
-- Digital Folders refer to originals; offline references cannot make an unavailable original readable.
-- iOS connection is limited to Apple's exposed media area; Android requires USB debugging authorization.
-- Google Photos provides only user-picked items and is read-only. Google Drive requires network access and configured OAuth.
-- Local library sharing is unencrypted HTTP and should stay on trusted private Wi-Fi.
+- Startup can use a local cache fallback when a saved external cache destination is missing or unresponsive. Keep the external destination and its cache data intact; follow Silo's recovery status and reconnect the destination when available. This behavior does not make an unavailable original media source readable.
+- Search, face analysis, location extraction, duplicate hashing, audio inventory, and preview generation are separate jobs. Progress in one stage does not mean the others have finished.
+- Memories can search indexed media by topic and prepare editable stories in the background. Review the generated story, soundtrack, and clip-audio mix before saving. A source review does not prove that every library or generated video will include audible music on every machine.
+- Face clusters are model suggestions and need human review. Face angle, lighting, occlusion, and image quality affect results.
+- Map uses available location metadata; it does not infer GPS from scene content alone.
+- Duplicate review finds exact file-content matches, not visually similar or edited copies.
+- Digital Folders refer to originals; an offline reference does not make an unavailable original readable.
+- iOS connection is limited to Apple's exposed media area; Android requires USB debugging authorization. Phone restore archives and browseable snapshots are separate features.
+- Google Photos provides only items selected through Google Photos Picker and is read-only. Google Drive requires network access and configured OAuth.
+- Local library sharing uses unencrypted HTTP and should stay on trusted private Wi-Fi.
 - Configuration backups can contain access tokens; phone backups are a separate data set.
-- Exported movies, previews and caches need additional disk space.
+- Exported movies, previews, and caches need additional disk space.
 
-## Build compatibility checklist for a release
+## Build compatibility checklist
 
-Before describing a particular installer as compatible, record the exact installer filename/checksum, app bundle version, CPU architecture, macOS/Windows version, Mac model/chip, launch result, core workflows tested and any known failures. Test both architecture-specific Mac builds on real hardware; do not infer Intel compatibility from Apple silicon or vice versa.
+Before describing a particular installer as compatible, record its exact filename and checksum, app bundle version, CPU architecture, operating system version, device model, launch result, core workflows tested, and known failures. Test Intel and Apple silicon Mac builds on real hardware; do not infer one architecture's behavior from the other.

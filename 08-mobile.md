@@ -2,7 +2,7 @@
 
 The **Mobile** section manages connected iPhone/iPad and Android sources, saved-device copies and message exports. Phone support is a USB workflow, not a full device backup of every protected operating-system file.
 
-## Device controls in 2.1.4
+## Device controls and connection
 
 Use **Scan devices** to refresh discovery. Each device has a compact action toolbar for backing up, browsing, connecting, renaming its Silo label, opening supported encrypted restore-archive controls, and unmounting. Available actions depend on the connection and installed tools.
 

@@ -22,7 +22,7 @@ The demo includes five automatic memories; generating more on demand requires fu
 5. Use the card's folder button to reveal the already saved movie in Finder, or open a finished movie in the **Memory Book**.
 6. To change the storage destination, use **Settings → Memories**. Movies in a chosen destination are written under **Silo Memories**; the default is Silo's local app storage. Copy a finished movie from there when you need a separate copy.
 
-The soundtrack is selected locally from available music. If no usable music is available, a built-in fallback can be used. Review the soundtrack and original audio mix before saving.
+Library soundtracks come from music indexed in connected Silo sources. On a story card, open **Edit movie settings**, then use **Browse mood soundtracks** to load available choices or select a track from the soundtrack control. Choosing a library track saves it to that story and refreshes its preview. If no library choices appear, connect the source and wait for its audio scan to finish, then retry. Original clip audio has a separate mix control; it is not a built-in music fallback. Preview the prepared movie and confirm the selected music is audible before saving. The guide documents the controls but does not claim that every build or library has been runtime-verified.
 
 Removing an individual suggestion changes Silo's editable list; it does not delete source photos or an already finished movie. The bulk-clear control is no longer present. The Memory Book lists one finished movie per story from the Memories folder, including movies whose editable cards are no longer visible. Settings lets you choose where movies and story-support files are saved, or return to Silo's app storage.
 

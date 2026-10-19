@@ -4,7 +4,7 @@
 
 **Your files, one local-first library.** Browse folders, drives, connected phones and selected cloud files; search photos by meaning; organize with people, places and virtual collections; review duplicates; and make memory videos.
 
-> Updated for **Silo 2.1.4**, reviewed on **October 15, 2026** against the official GitHub release tag **v2.1.4**. Screenshots are from an earlier preview and may differ from the current layout. This is a source review, not a new end-to-end test of every installer or checkout. See [Compatibility and known limits](13-compatibility.md).
+> Guide content last reviewed on **October 19, 2026** against the latest stable Silo release available at that time. The [latest Silo build and release notes](https://github.com/ilovespectra/silo-downloads/releases/latest) always point to the current release; the guide site displays its current tag automatically. A new release does not itself mean every guide section or installer has been re-audited. Screenshots are from an earlier preview and may differ from the current layout. See [Compatibility and known limits](13-compatibility.md).
 
 ![Silo Files screen at first launch](assets/files-first-launch-redacted.jpg)
 
@@ -38,16 +38,18 @@ Most first-run tasks take time on a large library. Finding files, preparing CLIP
 
 ## Recent improvements
 
-- **Search and indexing:** startup/storage recovery and Intel native-index loading have been improved; completed-stage counts are reconciled, and a few unreadable files no longer trigger a systemic indexing-failure report.
-- **Memories:** automatic suggestions after startup indexing settles and every 24 hours while Silo remains open, a working **Generate Memories** replacement flow with live progress, background movie preparation, a Memory Book of finished movies, and full-screen playback.
-- **Mobile and Map:** bundled phone tools, compact device action toolbars, a backup confirmation/destination dialog, and clearer map counts and collapsible sidebar sections.
-- **Licensing and updates:** finalized Solana USDC verification through the license relay, signed licenses bound to one computer, corrected wallet links, automatic closing after activation, and in-place macOS updates.
+- **Search and indexing:** startup can recover from a missing or unresponsive cache destination, and completed search indexes can be loaded while discovery and other indexing stages continue separately. Cache recovery and search preparation still depend on the machine and available storage.
+- **Memories:** automatic suggestions, topic-based searches, progress during generation, background movie preparation, and a Memory Book for finished movies. Story controls include soundtrack and original-clip-audio settings; preview the prepared movie before saving.
+- **People and Map:** adjustable thumbnail size for People clusters, reviewed face assignments, clearer map counts, and collapsible map sections. Map changes require a deliberate selection and apply action.
+- **Mobile and backups:** bundled phone tools, dated browseable snapshots, separate restore archives, message history/export controls, and verified Fallout Shelter file copies. Availability differs by device and operating system.
+- **Licensing and updates:** computer-bound signed licenses, payment verification through the license relay, and in-place macOS updates. Check the installed app for current purchase terms.
 
 See the individual chapters for requirements and remaining limits; these improvements do not guarantee that every file is readable or every device is supported.
 
 ## Official links
 
 - [Try Silo website](https://trysilo.kolektivkrog.si/)
+- [Latest Silo build and release notes](https://github.com/ilovespectra/silo-downloads/releases/latest)
 - [Silo source code on GitHub](https://github.com/ilovespectra/Silo)
 
 ## Privacy at a glance

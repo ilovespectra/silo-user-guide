@@ -21,6 +21,9 @@ const byId = new Map(documents.map((doc) => [doc.id, doc]));
 
 marked.setOptions({ gfm: true, breaks: false });
 
+const SILO_RELEASE_URL = 'https://github.com/ilovespectra/silo-downloads/releases/latest';
+const SILO_RELEASE_API_URL = 'https://api.github.com/repos/ilovespectra/silo-downloads/releases/latest';
+
 function escapeAttribute(value = '') {
   return String(value).replace(/[&"<>]/g, (char) => ({ '&': '&amp;', '"': '&quot;', '<': '&lt;', '>': '&gt;' })[char]);
 }
@@ -72,6 +75,29 @@ function App() {
   });
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [latestReleaseTag, setLatestReleaseTag] = useState('');
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let active = true;
+    fetch(SILO_RELEASE_API_URL, {
+      headers: { Accept: 'application/vnd.github+json' },
+      signal: controller.signal,
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('Release lookup failed');
+        return response.json();
+      })
+      .then((release) => {
+        const tag = typeof release?.tag_name === 'string' ? release.tag_name.trim() : '';
+        if (active && /^[A-Za-z0-9._+-]{1,80}$/.test(tag)) setLatestReleaseTag(tag);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, []);
 
   useEffect(() => {
     document.title = doc?.id === 'README' ? 'Silo User Guide' : `${doc?.title ?? 'Silo User Guide'} · Silo User Guide`;
@@ -171,7 +197,12 @@ function App() {
           <span className="nav-heading nav-heading-spaced">EXPLORE SILO</span>
           {chapters.slice(3).map((item, index) => <NavItem key={item.id} item={item} active={doc?.id === item.id} number={String(index + 4).padStart(2, '0')} />)}
         </nav>
-        <div className="sidebar-footer"><span className="status-dot" /> Guide reviewed <time dateTime="2026-10-09">Oct 9, 2026</time></div>
+        <div className="sidebar-footer">
+          <div className="sidebar-review"><span className="status-dot" /><span>Guide reviewed</span><time dateTime="2026-10-19">Oct 19, 2026</time></div>
+          <a className="latest-release-link" href={SILO_RELEASE_URL} target="_blank" rel="noreferrer" aria-label={`Latest Silo build${latestReleaseTag ? ` ${latestReleaseTag}` : ''} on Silo Downloads`}>
+            <span>Latest Silo build</span><strong>{latestReleaseTag || 'Silo Downloads'}</strong><span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </aside>
       <main className="main-area">
         <div className="topline"><div className="breadcrumbs"><a href="/">Silo Guide</a><span>/</span><span>{doc?.id === 'README' ? 'Overview' : doc?.title}</span></div><button className="theme-button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><span>{theme === 'dark' ? '☼' : '◐'}</span>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</button></div>

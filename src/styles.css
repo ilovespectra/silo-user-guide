@@ -69,8 +69,13 @@ kbd { padding: 3px 5px; border: 1px solid var(--line); border-radius: 4px; color
 .nav-link.active { background: var(--orange-wash); color: var(--orange); font-weight: 700; }
 .nav-number { width: 17px; color: var(--subtle); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
 .nav-link.active .nav-number { color: var(--orange); }
-.sidebar-footer { display: flex; align-items: center; gap: 6px; border-top: 1px solid var(--line); padding: 14px 7px 0; color: var(--muted); font-size: 10px; }
-.sidebar-footer time { margin-left: auto; color: var(--subtle); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.sidebar-footer { display: grid; gap: 10px; border-top: 1px solid var(--line); padding: 14px 7px 0; color: var(--muted); font-size: 10px; }
+.sidebar-review { display: flex; align-items: center; gap: 6px; }
+.sidebar-review time { margin-left: auto; color: var(--subtle); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.latest-release-link { display: flex; align-items: center; gap: 6px; color: var(--muted); text-decoration: none; }
+.latest-release-link:hover { color: var(--orange); }
+.latest-release-link strong { margin-left: auto; color: var(--text); font: 600 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.latest-release-link > span:last-child { color: var(--orange); font-size: 12px; }
 .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #6eb67a; box-shadow: 0 0 0 3px rgba(110,182,122,.12); }
 .main-area { min-height: 100vh; margin-left: var(--sidebar); }
 .topline { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(28px, 6vw, 86px); border-bottom: 1px solid var(--line); }

@@ -6,7 +6,7 @@
 
 ## Silo cache destination
 
-The cache contains generated data such as search/face/location indexes, thumbnails and previews. **Choose cache destination** lets you select an external folder. Silo verifies the copied cache before removing the prior copy, then restarts when needed. Keep the destination mounted while using Silo. The fallback option preserves a 10 GB free-space reserve; turn it off if you prefer indexing to pause when the external cache drive is absent.
+The cache contains generated data such as search/face/location indexes, thumbnails and previews. **Choose cache destination** lets you select an external folder. Silo verifies the copied cache before removing the prior copy, then restarts when needed. Keep the destination mounted while using Silo. The fallback option preserves a 10 GB free-space reserve; turn it off if you prefer indexing to pause when the external cache drive is absent. If a previously selected external destination is missing or unresponsive at startup, Silo can use a local fallback for that session and show recovery status. Reconnect the external volume and let Silo verify its cache; do not move or delete cache folders manually.
 
 Changing the cache destination does not move your original folders or change Silo settings. Do not manually delete an index folder while Silo is running.
 
